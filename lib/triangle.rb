@@ -10,11 +10,7 @@ class Triangle
 
   def kind
     if @s1 == 0 || @s2 == 0 || @s3 == 0 || (@s1 + @s2) < @s3 || (@s2 + @s3) < @s1 || (@s1 + @s3) < @s2
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      raise TriangleError
     else
       case
       when @s1 != @s2 && @s1 != @s3 && @s2 != @s3
