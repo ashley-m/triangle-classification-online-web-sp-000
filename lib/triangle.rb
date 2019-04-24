@@ -7,7 +7,7 @@ class Triangle
     @s2 = m
     @s3 = n
   end
-  
+
   def kind
     if @s1 == 0 || @s2 == 0 || @s3 == 0
       begin
@@ -16,7 +16,7 @@ class Triangle
         puts error.message
       end
     else
-      case 
+      case
       when @s1 == @s2 || @s2 == @s3 || @s1 == @s3
         :isosceles
       when @s1 == @s2 && @s1 == @s3
@@ -27,7 +27,7 @@ class Triangle
     end
   end
 
-  def 
+  def
   class TriangleError < StandardError
     def message
       "Triangles must consist of sides whose lengths are > 0 additionally,
