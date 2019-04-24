@@ -27,7 +27,6 @@ class Triangle
     end
   end
 
-  def
   class TriangleError < StandardError
     def message
       "Triangles must consist of sides whose lengths are > 0 additionally,
