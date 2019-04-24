@@ -19,7 +19,7 @@ class Triangle
       case
       when @s1 == @s2 || @s2 == @s3 || @s1 == @s3
         :isosceles
-      when @s1 == @s2 && @s1 == @s3
+      when @s1 == @s2 && @s1 == @s3 && @s2 == @s3
         :equilateral
       when @s1 != @s2 && @s1 != @s3 && @s2 != @s3
         :scalene
